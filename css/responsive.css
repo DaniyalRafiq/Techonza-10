@@ -1,0 +1,39 @@
+@media (max-width: 1212px) {}
+
+@media (max-width: 1136px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 992px) {
+   body.active {
+      overflow: hidden;
+      transition: 0.3s;
+  }
+  .main_coloum_reverse {
+   display: flex;
+   flex-direction: column-reverse;
+}
+.main{
+   flex-direction: column;
+}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}
+
+@media (max-width: 616px) {}
+
+@media (max-width: 597px) {}
+
+@media (max-width: 571px) {}
+
+@media (max-width: 571px) {}
+
+@media (max-width: 470px) {}
+
+@media (max-width: 465px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 394px) {}
