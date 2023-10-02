@@ -448,6 +448,11 @@ i {}
     margin-bottom: -10px;
     position: relative;
 }
+.logo:hover {
+    height: 100px;
+    margin-bottom: -20px;
+}
+
 
 .logo:after,
 .logo:before {
@@ -459,6 +464,7 @@ i {}
     background: inherit;
     z-index: 5;
     filter: brightness(0.5);
+    transition: .3s;
 }
 
 .logo:after {
@@ -471,6 +477,9 @@ i {}
     clip-path: polygon(100% 100%, 100% 0, 0 0);
 }
 
+.logo:hover:after  , .logo:hover:before {
+    height: 20px;
+}
 .nav_link a.active:after {
     content: "";
     top: -5px;
