@@ -141,5 +141,17 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active')
   });
 
+
+  $('.search_icon').click(function () {
+    var $searchIcon = $(this);
+    var $searchElement = $searchIcon.find('.ti-search');
+    
+    // Toggle class for ".search_icon" itself
+    $searchIcon.toggleClass('active');
+    
+    // Toggle class for ".ti-search" element inside the clicked ".search_icon"
+    $searchElement.toggleClass('ti-x');
+    $('.header_form').slideToggle()
+  });
   
 });

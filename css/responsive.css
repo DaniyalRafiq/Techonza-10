@@ -6,12 +6,16 @@
   }
 }
 @media (max-width: 1024px) {
-   .menu_btn_main {
+
+
+
+
+}
+
+@media (max-width: 992px) {
+   .menu_btn {
       display: flex;
-      z-index: 5;
-      width: 100%;
-      max-width: 405.33px;
-      z-index: 10;
+      z-index: 44;
    }
 
    .nav_links.active {
@@ -33,19 +37,22 @@
       box-shadow: var(--box-shadow);
 
    }
+   .header_wrapper:after{
+      content: none;
+   }
 
    .nav_links {
       position: fixed;
-      background: var(--primary-800);
+      background: var(--primary-400);
       left: 0;
-      height: 244px;
+      height: 250px;
       top: 0;
       align-items: flex-start;
       z-index: 7;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 333px;
+      width: 303px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -55%);
@@ -95,45 +102,6 @@
    .header_wrraper:has(form) {
       position: relative;
    }
-
-   .search_btn_main {
-      display: flex;
-      z-index: 5;
-      width: 100%;
-      max-width: 405.33px;
-      z-index: unset;
-      justify-content: flex-end;
-   }
-
-   .header_form {
-      position: absolute;
-      top: 0px;
-      z-index: 10;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: .3s;
-      opacity: 0;
-      pointer-events: none;
-      width: 100%;
-      max-width: 100%;
-   }
-
-   .header_form.active {
-      opacity: 1;
-      pointer-events: auto;
-      top: 50%;
-   }
-
-   .z-index {
-      z-index: 1;
-   }
-   button.search_btn.active {
-      margin-right: 3px;
-  }
-}
-
-@media (max-width: 992px) {
-
 
    .main_coloum_reverse {
       display: flex;
@@ -225,6 +193,29 @@
    align-items: flex-start;
    text-align: start;
 }
+.nav_links li {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.nav_links li a {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px 0;
+}
+
+.nav_links li a.active {
+   background: var(--secondary-500);
+   border-radius: 10px;
+   box-shadow: var(--box-shadow);
+}
+.nav_links li a:after {
+   content: none;
+}
 }
 @media (max-width: 768px) {
    .contact_wrapper {
@@ -296,6 +287,10 @@
 .latest_card_img.overlay:after{
    background: linear-gradient(0deg, #000000b3, transparent)
 }
+.header_form {
+   right: 0;
+   max-width: 303.33px;
+}
 }
 @media (max-width: 616px) {
 
@@ -320,6 +315,12 @@
   }
   .sidebar_item.side_single_store{
    flex-direction: column;
+}
+.category_btn{
+   display: none;
+}
+.cate_link , .cate_link a {
+   display: flex !important ;
 }
 }
 
