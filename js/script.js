@@ -154,4 +154,17 @@ $(document).ready(function () {
     $('.header_form').slideToggle()
   });
   
+
+  var swiper = new Swiper(".hero_wrapper", {
+    slidesPerView: 1,
+    effect: "fade",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
 });
