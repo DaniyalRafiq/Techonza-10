@@ -249,7 +249,6 @@ h4 {
     color: var(--black);
 }
 
-i {}
 
 .main_heading {
     display: flex;
@@ -551,7 +550,6 @@ footer {
     right: 2px;
 }
 
-.header_form {}
 
 .search_field .icon {
     display: flex;
